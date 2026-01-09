@@ -1,0 +1,119 @@
+html{height:100%}
+
+
+.header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* White text color to contrast the background */
+    text-align: center;
+    background: linear-gradient(to right, #D8B6D8, #4B0082); /* Gradient from light to dark purple */
+    padding: 20px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin: 0;
+  }
+  
+  body {
+    background: linear-gradient(to top, #D8B6D8, #4B0082); /* Background gradient for the whole page */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+.headlineStyle{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(227, 225, 225);
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.buttonAddFriend{
+  border: none;
+  border-radius: 4px;
+  background-color: #96c498;
+  color: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+}
+
+.buttonAddfriend:disabled {
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+  cursor: not-allowed; /* Visual cue on mouse*/
+}
+
+.buttonRemoveFriend {
+  border: none;
+  border-radius: 4px;
+  background-color: #e16060;
+  color: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+  padding: 1px 3px; /* Adjust padding to control button size */
+  font-size: 18px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.buttonRemoveFriend:disabled {
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+  cursor: not-allowed; /* Visual cue on mouse*/
+}
+
+.buttonStyle{
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+}
+
+
+.sideBarBoxStyle{
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #D8B6D8;
+  font-weight: "bold";
+  font-size: 1.1rem;
+
+  width: 300px;
+  min-height: 150px;
+  max-height: 500px;
+  overflow-y: auto; /* Scrolling horizontally*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+/* Styles disappeare if width is under 400px */
+@media (width >= 450px) {
+  .parentStyle{
+    display: grid;
+    grid-template-columns: 450px 1fr; 
+    grid-template-rows: 100%; /* Full height for both columns */
+    height: 95vh; /* Viewport height */
+    width: 95vw; /* Viewport width */
+  }
+  
+  .sideBarStyle{
+    grid-column: 1;
+    grid-row: 1; 
+    border-right: 1px solid white; 
+  
+  }
+
+  .rightViewStyle{
+    grid-column: 2;
+    grid-row: 1; 
+    display: grid;
+  }
+}
+

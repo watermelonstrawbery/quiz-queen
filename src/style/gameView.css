@@ -1,0 +1,41 @@
+
+.answerButton {
+  background-color: rgb(189, 146, 206);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.answerButtonGreen{
+  color: white;
+  background-color: green;
+  font-size: 30px;
+}
+
+.answerButtonRed{
+  color: white;
+  background-color: red;
+  font-size: 30px;
+}
+
+.answerButtonGray{
+  color: black;
+  background-color: rgb(194, 189, 189);
+  font-size: 30px;
+}
+
+.answerButtonGrayGreen{
+  color: black;
+  background-color: rgb(115, 134, 115);
+  font-size: 30px;
+}
+
+.difficultyButton{
+  color: gray;
+}
+
+.difficultyButtonChosen{
+  color: black;
+}
